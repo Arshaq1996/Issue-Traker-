@@ -12,7 +12,7 @@
     <!-- bootstrap css -->
 </head>
 
-<body onload="fetchIssues()">
+<body >
     <div class="container">
         <h1> ISSUE TRAKER </h1>
 
@@ -21,9 +21,9 @@
 
             <h3>Add New Issue</h3>
 
-            <form id="issueInputForm">
+            
 
-                <div class="form-group">
+                <div class="form-group" id="issueInputForm">
 
 
                     <label for="issueDescInput">Description</label>
@@ -39,7 +39,7 @@
 
                     <label for="issueDescInput">Severity</label>
 
-                    <select id="issueSverityInput" class="form-control">
+                    <select id="issueSeverityInput" class="form-control">
 
                         <option value="Low">Low</option>
                         <option value="Mediun">Medium</option>
@@ -53,16 +53,17 @@
                 <div class="form-group">
 
 
-                    <label for="issueAssignedToInput">Assigned To</label>
+                    <label >Assigned To</label>
 
-                    <input type="text" class="form-control " id="issueAssignedToInput " placeholder="Enter Responsible..">
+                    <input type="text" class="form-control " id="er " placeholder="Enter Responsible..">
 
 
 
                 </div>
 
-                <button type="submit" class="btn btn-primary"> Add Issue</button>
-            </form>
+                
+            
+            <button type="button" class="btn btn-primary" onclick="SetIssues();"> Add Issue</button>
         </div>
 
         <div class="col-lg-12">
